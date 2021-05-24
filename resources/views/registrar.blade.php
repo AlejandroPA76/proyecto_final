@@ -29,7 +29,7 @@
 					<form class="" method="post" action="#">
 						
 						<div class="form-group">
-							<label for="name" class="cols-sm-2 control-label">Your Name</label>
+							<label for="name" class="cols-sm-2 control-label">Nombre</label>
 							<div class="cols-sm-10">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
