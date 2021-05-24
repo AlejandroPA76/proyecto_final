@@ -39,7 +39,7 @@
 						</div>
 
 						<div class="form-group">
-							<label for="email" class="cols-sm-2 control-label">Your Email</label>
+							<label for="email" class="cols-sm-2 control-label">Tu Correo</label>
 							<div class="cols-sm-10">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
@@ -49,7 +49,7 @@
 						</div>
 
 						<div class="form-group">
-							<label for="username" class="cols-sm-2 control-label">Username</label>
+							<label for="username" class="cols-sm-2 control-label">Nombre de usuario</label>
 							<div class="cols-sm-10">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
@@ -59,7 +59,7 @@
 						</div>
 
 						<div class="form-group">
-							<label for="password" class="cols-sm-2 control-label">Password</label>
+							<label for="password" class="cols-sm-2 control-label">Contraseña</label>
 							<div class="cols-sm-10">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
@@ -69,7 +69,7 @@
 						</div>
 
 						<div class="form-group">
-							<label for="confirm" class="cols-sm-2 control-label">Confirm Password</label>
+							<label for="confirm" class="cols-sm-2 control-label">Confirmar contraseña</label>
 							<div class="cols-sm-10">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
