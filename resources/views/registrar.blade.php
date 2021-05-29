@@ -19,68 +19,78 @@
 		<link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
 
-		<title>Admin</title>
+		<title>Registrar</title>
 	</head>
 	<body>
 		<div class="container">
 			<div class="row main">
 				<div class="main-login main-center">
 					<h1>     </h1>
-					<form class="" method="post" action="#">
+					<form action="{{route('registrarEmpleado')}}" method="POST" >
 						
+						@csrf
 						<div class="form-group">
 							<label for="name" class="cols-sm-2 control-label">Nombre:</label>
 							<div class="cols-sm-10">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-									<input type="text" class="form-control" name="name" id="name"  placeholder="Enter your Name"/>
+									<input type="text" class="form-control" name="name" id="name"  placeholder="ingresa tu nombre"/>
 								</div>
 							</div>
 						</div>
 
 						<div class="form-group">
-							<label for="email" class="cols-sm-2 control-label">Correo Electronico:</label>
+							<label for="apellido_p" class="cols-sm-2 control-label">Apellido Paterno:</label>
 							<div class="cols-sm-10">
 								<div class="input-group">
-									<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
-									<input type="text" class="form-control" name="email" id="email"  placeholder="Enter your Email"/>
+									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="apellido_p" id="apellido_p"  placeholder="ingresa tu apellido paterno"/>
 								</div>
 							</div>
 						</div>
 
+            <div class="form-group">
+              <label for="apellido_m" class="cols-sm-2 control-label">Apellido Materno:</label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                  <input type="text" class="form-control" name="apellido_m" id="apellido_m"  placeholder="ingresa tu apellido materno"/>
+                </div>
+              </div>
+            </div>
+
 						<div class="form-group">
-							<label for="username" class="cols-sm-2 control-label">Usuario</label>
+							<input type="hidden" id="rol" name="rol" value="cliente">
+						</div>
+
+
+						<div class="form-group">
+							<label for="username" class="cols-sm-2 control-label">Usuario:</label>
 							<div class="cols-sm-10">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
-									<input type="text" class="form-control" name="username" id="username"  placeholder="Enter your Username"/>
+									<input type="text" class="form-control" name="username" id="username"  placeholder="nombre de usuario"/>
 								</div>
 							</div>
 						</div>
+						
 
 						<div class="form-group">
-							<label for="password" class="cols-sm-2 control-label">Constrasena</label>
+							<label for="password" class="cols-sm-2 control-label">Constrasena:</label>
 							<div class="cols-sm-10">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-									<input type="password" class="form-control" name="password" id="password"  placeholder="Enter your Password"/>
-								</div>
-							</div>
-						</div>
-
-						<div class="form-group">
-							<label for="confirm" class="cols-sm-2 control-label">Confirmar Contrasena</label>
-							<div class="cols-sm-10">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-									<input type="password" class="form-control" name="confirm" id="confirm"  placeholder="Confirm your Password"/>
+									<input type="password" class="form-control" name="password" id="password"  placeholder="ingresa tu contrasena"/>
 								</div>
 							</div>
 						</div>
 
 						<div class="form-group ">
-							<a href="{{route('login')}}" target="_blank" type="button" id="button" class="btn btn-primary btn-lg btn-block login-button">Registrar</a>
+							<a href="{{route('login')}}"  type="button" id="button" class="btn btn-primary btn-lg btn-block login-button">Registrar</a>
 						</div>
+					{{--<div class="form-group ">
+					            <button type="submit" class="btn btn-primary">Guardar</button>
+					            </div>--}}
 					
 					</form>
 				</div>
