@@ -11,29 +11,30 @@
 	<div class="col-md-12">
 		<div class="card">
 			<div class="card-header">
-				Crear Usuario
+				Editar Usuario
 				
 		</div>
 		<div class="card-body">
-			<form action="{{route('registrarEmpleado')}}" method="POST">
+			<form action="{{route('modificarEmpleadoYa', $ModificarSuEmpleado->idUsuarioA)}}" method="POST">
+				@method('put')
 				@csrf
 				<div class="form-group">
 					<label for="">Nombre</label>
-					<input type="text" class="form-control" name="name" required="required">
+					<input type="text" value="{{$ModificarSuEmpleado->nombre}}" class="form-control" name="name" required="required">
 				</div>
 				<div class="form-group">
 					<label for="">Apellido_Paterno</label>
-					<input type="text" class="form-control" name="apellido_p" required="required">
+					<input type="text" value="{{$ModificarSuEmpleado->apellidosP}}" class="form-control" name="apellido_p" required="required">
 				</div>
 
 				<div class="form-group">
 					<label for="">Apellido_Materno</label>
-					<input type="text" class="form-control" name="apellido_m" required="required">
+					<input type="text" value="{{$ModificarSuEmpleado->apellidosM}}" class="form-control" name="apellido_m" required="required">
 				</div>
 				
 				<div class="form-group">
 					<label for="">Seleccione un rol</label>
-    				<div class="radio">
+    				<div class="radio" >
   					<input type="radio" name="rol" value="cliente">cliente</label>
 					</div>
 
@@ -54,12 +55,12 @@
 				
 					<div class="form-group">
 					<label for="">Username</label>
-					<input type="text" class="form-control" name="username" required="required">
+					<input type="text" value="{{$ModificarSuEmpleado->usuario}}" class="form-control" name="username" required="required">
 				</div>
 
 					<div class="form-group">
 					<label for="">Contrasena</label>
-					<input type="password" class="form-control" name="password" required="required">
+					<input type="text" value="{{$ModificarSuEmpleado->contrasena}}" class="form-control" name="password" required="required">
 				</div>
 
 				<div class="btn float-start">

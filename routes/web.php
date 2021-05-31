@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
+
 
 Route::get('/',function(){
 	return view('cliente.c_index');
@@ -18,3 +20,19 @@ Route::get('supervisorCrearUsuario','App\Http\Controllers\Micontrolador@crearSuE
 
 Route::post('productos', 'App\Http\Controllers\Micontrolador@subirSuEmpleado')->name('registrarEmpleado');
 
+Route::post('login',function(){ 
+ $credentials =request()->only('username','password');
+//return request()->only('username','password');
+if(Auth::attempt($credentials)){
+return 'hola';
+
+}
+return 'login fallado';
+
+})->name('post-login');
+
+Route::delete('supervisorEliminarUsuario/{idUsuarioA}','App\Http\Controllers\Micontrolador@eliminarSuEmpleado')->name('eliminarEmpleado');
+
+Route::get('supervisorModificarUsuario/{idUsuarioA}','App\Http\Controllers\Micontrolador@ModificarSuEmpleado')->name('modificarEmpleado');
+
+Route::put('supervisorModificarUsuario/{idUsuarioA}','App\Http\Controllers\Micontrolador@ModificarSuEmpleadoYa')->name('modificarEmpleadoYa');

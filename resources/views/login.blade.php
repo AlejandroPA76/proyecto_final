@@ -5,13 +5,14 @@
 
 <body>
     <div id="login">
-        <h3 class="text-center text-white pt-5">Login para Formulario</h3>
+        <h3 class="text-center text-white pt-5">Login form</h3>
         <div class="container">
             <div id="login-row" class="row justify-content-center align-items-center">
                 <div id="login-column" class="col-md-6">
                     <div id="login-box" class="col-md-12">
-                        <form id="login-form" class="form" action="" method="post">
-                            <h3 class="text-center text-info">Inicio de Sesion</h3>
+                        <form id="login-form" class="form" action="{{route('post-login')}}" method="post">
+                            @csrf
+                            <h3 class="text-center text-info">Inicio de sesion</h3>
                             <div class="form-group">
                                 <label for="username" class="text-info">Usuario:</label><br>
                                 <input type="text" name="username" id="username" class="form-control">
@@ -25,7 +26,7 @@
                                 <input type="submit" name="submit" class="btn btn-info btn-md" value="Iniciar Sesion">
                           
                               <div id="register-link" class="text-right">
-                                <a href="{{ route('registrar') }}" class="text-info">Registrate Aqui!</a>
+                                <a href="{{ route('registrar') }}" class="text-info">Registrate aqui!</a>
 
                             </div>
                         </form>

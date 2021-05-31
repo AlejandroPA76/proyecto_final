@@ -85,13 +85,19 @@
 							</div>
 						</div>
 
-						<div class="form-group ">
-							<a href="{{route('login')}}"  type="button" id="button" class="btn btn-primary btn-lg btn-block login-button">Registrar</a>
-						</div>
 					{{--<div class="form-group ">
-					            <button type="submit" class="btn btn-primary">Guardar</button>
-					            </div>--}}
+					<a href="{{route('login')}}"  type="submit" class="btn btn-primary btn-lg btn-block ">Registrar</a></div>--}}
+
+				{{--<div class="form-group ">
+																		<button type="submit" class="btn btn-primary btn-lg btn-block ">Guardar</button> </div>--}}
+
+					<div class="form-group">
+						<a href="{{route('login')}}">
+  					 <button type="submit">registrar</button>
+					</a>
+					</div>
 					
+
 					</form>
 				</div>
 			</div>

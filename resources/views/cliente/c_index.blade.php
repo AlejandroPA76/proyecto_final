@@ -207,7 +207,7 @@ $(document).on("click", ".action-buttons .dropdown-menu", function(e){
 </head> 
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a href="#" class="navbar-brand">Brand<b>Name</b></a>     
+  <a href="#" class="navbar-brand">Mercado</b></a>     
   <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -217,7 +217,7 @@ $(document).on("click", ".action-buttons .dropdown-menu", function(e){
       <a href="#" class="nav-item nav-link">Home</a>
       <a href="#" class="nav-item nav-link">About</a>     
       <div class="nav-item dropdown">
-        <a href="#" data-toggle="dropdown" class="nav-item nav-link dropdown-toggle">Services</a>
+        <a href="#" data-toggle="dropdown" class="nav-item nav-link dropdown-toggle">Categoria</a>
         <div class="dropdown-menu">         
           <a href="#" class="dropdown-item">Web Design</a>
           <a href="#" class="dropdown-item">Web Development</a>
@@ -225,9 +225,6 @@ $(document).on("click", ".action-buttons .dropdown-menu", function(e){
           <a href="#" class="dropdown-item">Digital Marketing</a>
                 </div>
             </div>
-      <a href="#" class="nav-item nav-link active">Pricing</a>
-      <a href="#" class="nav-item nav-link">Blog</a>
-      <a href="#" class="nav-item nav-link">Contact</a>
     </div>
     <form class="navbar-form form-inline">
       <div class="input-group search-box">                
